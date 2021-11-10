@@ -1,0 +1,46 @@
+.member-photo {
+    border-radius: 5%;
+    width: 70%;
+    max-width: 206px;
+    max-height: 206px;
+    box-shadow: 3px 3px 10px #aaaaaa;
+}
+
+.member-description {
+    display: flex;
+    width: 206px;
+    min-height: 80px;
+}
+
+.info {
+    flex: 1 auto;
+ }
+
+.info h5 {
+    margin: 10px 0px 0px 5px;
+    font-size: 18px;
+}
+  
+.info p {
+    margin: 2px 5px;
+    font-size: 14px;
+    line-height: 0px;
+}
+
+.content {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+}
+
+.content > a {
+    float: right !important;
+    color:#0E76A8;
+    display: inline-block;
+}  
+
+.linkedin-icon{
+    line-height:40px;   
+}
