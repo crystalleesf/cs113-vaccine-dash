@@ -1,3 +1,25 @@
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 1em; */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h4 {
+    color: #ffc300;
+}
+
+.navbar-custom {
+    background-color: #FFC300;
+    height: 65px;
+}
+
+.nav-link {
+    color: #000814 !important;
+}
+
 .member-photo {
     border-radius: 5%;
     width: 70%;
@@ -35,7 +57,7 @@
     width: 200px;
 }
 
-.content > a {
+.content a {
     float: right !important;
     color:#0E76A8;
     display: inline-block;
@@ -43,4 +65,107 @@
 
 .linkedin-icon{
     line-height:40px;   
+    color: #ffd60a;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+#game-intro {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(/resources/images/sprites/floor.jpg);
+}
+
+#banner {
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 700% !important;
+    margin: 0;
+    text-align: center !important;
+}
+
+.sprite-container {
+    width: 150px;
+	height: 150px;
+	overflow: hidden;
+	animation: floating 3s infinite ease-in-out;
+    position: absolute;
+}
+
+.sprite {
+    width: 100%; 
+    height: auto; 
+}
+
+#covid-sprite {
+    left: 1em;
+    top: -7em;
+}
+
+#surgical-sprite {
+    right: 10em;
+    top: -13em;
+}
+
+#syringe-sprite {
+    left: 20em;
+    top: -15em;
+}
+
+#syringe-sprite > img {
+    -webkit-transform:rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#toilet-paper-sprite {
+    left: 14em;
+    top: 14em;
+}
+
+#n95-sprite {
+    right: 20em;
+    top: 18em;
+}
+
+#hand-sanitizer-sprite {
+    right: 2em;
+    top: 5em;
+}
+
+#medkit-sprite {
+    left: -1em;
+    top: -4em;
+}
+
+#gameplay, #scratchers {
+    padding: 2em 0em 2em 0em;
+}
+
+#scratchers {
+    background-color: #003566;
+    color: white;
+}
+
+footer {
+    background-color: #001d3d;
+    color: white;
+}
+
+#logo {
+    width: 8% !important;
 }
