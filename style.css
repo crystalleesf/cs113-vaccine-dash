@@ -11,6 +11,16 @@ h4 {
     color: #ffc300;
 }
 
+h3 {
+    font-family: 'Press Start 2P';
+    font-size: 2em;
+    text-shadow: 1px 1px 3px #FF0000;
+}
+
+p {
+    font-size: 130%;
+}
+
 .navbar-custom {
     background-color: #FFC300;
     height: 65px;
@@ -94,6 +104,7 @@ h4 {
     font-size: 700% !important;
     margin: 0;
     text-align: center !important;
+    text-shadow: 2px 2px 5px #FF0000;
 }
 
 .sprite-container {
