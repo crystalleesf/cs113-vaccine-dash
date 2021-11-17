@@ -78,7 +78,7 @@ h4 {
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(/resources/images/sprites/floor.jpg);
+    background-image: url(./resources/images/sprites/floor.jpg);
 }
 
 #banner {
