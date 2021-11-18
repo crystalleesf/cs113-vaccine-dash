@@ -44,3 +44,10 @@ function calcSpeed(prev, next) {
     return speed;
 
 }
+
+function clearFields() {
+    document.getElementById("fname").value = "";
+    document.getElementById("lname").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("message").value = "";
+}

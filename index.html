@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo&family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="index.js"></script>
@@ -25,10 +25,13 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#gameplay">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#scratchers">Scratchers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#get-in-touch">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -62,7 +65,7 @@
                 <h1 id="title">Vaccine Dash</h1>
             </div>
           </div>
-        <div id="gameplay" style="background-color: #d6d6d6">
+        <div id="about" style="background-color: #d6d6d6">
             <h1 class="text-center" style="margin-bottom: 1em;">Help make vaccines accessible to all!</h1>
             <div class="container">
                 <div class="row">
@@ -96,9 +99,7 @@
         <div id="scratchers">
             <div class="text-center">
                 <h1>Scratchers</h1>
-                <p>
-                    Vaccine Dash was developed in Irvine, CA.
-                </p>
+                <em>Making games from Scratch!</em>
             </div>
             <div class="container">
                 <h4>Developers</h4>
@@ -172,17 +173,54 @@
                 </div>
             </div>
         </div>
+        <div id="get-in-touch">
+            <div class="container" >
+                <h1>Get in Touch</h1>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email..">
+              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input id="submit-btn" type="submit" value="Submit" onclick="clearFields();">           
+            </div>
+        </div>
+        <script>
+            $('#submit-btn').on('click', function() {
+                $('#success-modal').show();
+            });
+        </script>
     </main>
-    <!-- Footer -->
+    <div id="success-modal" class="modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header" style="background-color: #34e065;">
+              <h5 class="modal-title">Success!</h5>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for your interest! Our team will be in touch soon.</p>
+            </div>
+            <div class="modal-footer">
+              <button id="close-btn" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+        $('#close-btn').on('click', function() {
+            $('#success-modal').hide();
+        });
+    </script>
     <footer class="page-footer font-small red">
-
-        <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
             © Copyright 2021 Scratchers
         </div>
-        <!-- Copyright -->
-    
     </footer>
-    <!-- Footer -->
 </body>
 </html>
