@@ -33,10 +33,25 @@ p {
     height: 65px;
 }
 
+.nav-item {
+    margin-left: 0.75em;
+}
+
 .nav-link {
     color: #000814 !important;
     font-family: 'Exo';
-    font-weight: 800;
+    font-weight: 900;
+}
+
+#play-btn {
+    border: 2px solid #003566 !important;
+    background-color: #003566;
+    opacity: 1;
+    color: white;
+}
+
+#play-btn:hover {
+    opacity: 0.75;
 }
 
 .member-photo {
@@ -116,6 +131,14 @@ p {
     text-shadow: 2px 2px 5px #FF0000;
 }
 
+#subtitle {
+    font-size: x-large;
+    text-shadow: none;
+    font-family: 'Exo';
+    font-weight: bold;
+    font-style: italic;
+}
+
 .sprite-container {
     width: 150px;
 	height: 150px;
@@ -136,12 +159,12 @@ p {
 
 #surgical-sprite {
     right: 10em;
-    top: -13em;
+    top: -10em;
 }
 
 #syringe-sprite {
     left: 20em;
-    top: -15em;
+    top: -13em;
 }
 
 #syringe-sprite > img {
@@ -153,26 +176,26 @@ p {
 }
 
 #toilet-paper-sprite {
-    left: 14em;
-    top: 14em;
-}
-
-#n95-sprite {
-    right: 20em;
+    left: 10em;
     top: 18em;
 }
 
+#n95-sprite {
+    right: 10em;
+    top: 20em;
+}
+
 #hand-sanitizer-sprite {
-    right: 2em;
+    right: -1em;
     top: 5em;
 }
 
 #medkit-sprite {
-    left: -1em;
+    left: -4em;
     top: -4em;
 }
 
-#about, #scratchers, #get-in-touch {
+#gameplay, #scratchers, #contact {
     padding: 2em 0em 2em 0em;
 }
 
@@ -181,7 +204,7 @@ p {
     color: white;
 }
 
-#get-in-touch {
+#contact {
     background-color: #001d3d;
     color: white;
 }
